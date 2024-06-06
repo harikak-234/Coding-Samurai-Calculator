@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="calculator.css">
+    <!-- <script src="prac.js"></script> -->
+</head>
+
+<body>
+    <div class="calc">
+        <input type="text" class="calc-screen" value="" id="result" disabled />
+        <div class="calc-keys">
+            <button type="button" class="operator" value="+" onclick="myOper('+')">&#43</button>
+            <button type="button" class="operator" value="-" onclick="myOper('-')">&#45</button>
+            <button type="button" class="operator" value="*" onclick="myOper('*')">&#215</button>
+            <button type="button" class="operator" value="/" onclick="myOper('/')">&#247</button>
+            <button type="button" value="7" onclick="myNum(7)">7</button>
+            <button type="button" value="8" onclick="myNum(8)">8</button>
+            <button type="button" value="9" onclick="myNum(9)">9</button>
+            <button type="button" class="operator" value="mod" onclick="myOper('%')">&#37</button>
+            <button type="button" value="4" onclick="myNum(4)">4</button>
+            <button type="button" value="5" onclick="myNum(5)">5</button>
+            <button type="button" value="6" onclick="myNum(6)">6</button>
+            <button type="button" value="all-clear" onclick="clr()">AC</button>
+
+            <button type="button" value="1" onclick="myNum(1)">1</button>
+            <button type="button" value="2" onclick="myNum(2)">2</button>
+            <button type="button" value="3" onclick="myNum(3)">3</button>
+            <button type="button" class="backspace" value="all-clear" onclick="bs()">&larr;</button>
+            <button type="button" value="0" onclick="myNum(0)">0</button>
+            <button type="button" value="." onclick="myDeci()">.</button>
+            <button type="button" class="eq" value="=" onclick="equals()"
+                style="background-color:rgba(40, 244, 40, 0.642);grid-column-span: 2;">=</button>
+
+        </div>
+        <script src="calculator.js"></script>
+</body>
+
+</html>
